@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>calc-traffic</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="show">
+      <div class="show__storage">
+        <h1 class="storage__title">STORAGE <span class="storage__value"></span> GB</h1>
+        <input type="range" id="storage" min="0" max="1000" step="1" value="500">
+        <div class="storage__num">
+          <div>0</div>
+          <div>1000</div>
+        </div>
+      </div>
+      <div class="show__transfer">
+        <h1 class="transfer__title">TRANSFER <span class="transfer__value"></span> GB</h1>
+        <input type="range" id="transfer" min="0" max="1000" step="1" value="500">
+        <div class="transfer__num">
+          <div>0</div>
+          <div>1000</div>
+        </div>      
+      </div>
+    </div>
+    
+    <div class="options">
+      <div class="backblaze item">
+        <div class="title__block">
+          <div class="title t">blackblaze</div>
+        </div>
+        <div class="icon">icon</div>
+        <div class="line"></div>
+        <div class="value">
+          <p class="backblaze__tower tower"></p>
+          <span class="blackblaze__price">7$</span>
+        </div>
+      </div>
+      <div class="bunny item">
+        <div class="title__block">
+          <p class="title">bunny</p>
+          <div class="title__options">
+            <div>
+              <input class="bunny__input" type="radio" name="bunny" value="1"> HDD
+            </div>
+            <div>
+              <input class="bunny__input" checked type="radio" name="bunny" value="2"> SDD
+            </div>  
+          </div>
+        </div>
+        <div class="icon">icon</div>        
+        <div class="line"></div>
+        <div class="value">
+          <p class="bunny__tower tower"></p>
+          <span class="bunny__price">$</span>
+        </div>
+      </div>
+      <div class="scaleway item">
+        <div class="title__block">
+          <p class="title">scaleway</p>
+          <div class="title__options">
+            <div>
+              <input class="scl__inp" type="radio" name="scaleway" value="2"> multi
+            </div>
+            <div>
+              <input class="scl__inp" checked type="radio" name="scaleway" value="1"> single
+            </div>  
+          </div>
+        </div>
+        <div class="icon">icon</div>
+        <div class="line"></div>
+        <div class="value">
+          <p class="scaleway__tower tower"></p>
+          <span class="scaleway__price">$</span>
+        </div>
+      </div>
+      <div class="vultr item">
+        <div class="title__block">
+          <div class="title t">vultr</div>
+        </div>  
+        <div class="icon">icon</div>
+        <div class="line"></div>
+        <div class="value">
+          <p class="vultr__tower tower"></p>
+          <span class="vultr__price">5$</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>

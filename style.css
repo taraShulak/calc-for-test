@@ -1,0 +1,180 @@
+
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+/*==================================*/
+
+.wrapper {
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.show {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding-bottom: 30px;
+}
+.show__storage,
+.show__transfer  {
+  font-size: 34px;
+  width: 400px;
+}
+.show__storage input,
+.show__transfer input{
+  width: 100%;
+}
+.storage__title,
+.transfer__title  {
+  text-align: center;
+}
+
+.storage__num,
+.transfer__num {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.storage__num div:last-child,
+.transfer__num div:last-child {
+  transform: translateX(50%);
+}
+.storage__num div:first-child,
+.transfer__num div:first-child {
+  transform: translateX(-50%);
+}
+
+.options {
+  height: 700px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+.item span {
+  padding-left: 5px;
+}
+
+.title {
+  width: 180px;
+  font-size: 28px;
+}
+.title__options {
+  display: flex;
+  gap: 10px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  margin-right: 20px;
+}
+
+.line {
+  width: 10px;
+  background-color: #000;
+  height: 50px;
+}
+.value {
+  display: flex;
+  width: 500px;
+  height: 20px;  
+}
+
+.backblaze__tower,
+.bunny__tower,
+.scaleway__tower,
+.vultr__tower {
+  height: 100%;
+  width: 100px;
+  background-color: rgb(150, 150, 150);
+  border: 1px solid #000;
+}
+
+.minPrice {
+  background-color: #900;
+}
+@media(max-width: 989px) {
+  
+  .options {
+    margin: 0 auto; 
+    padding-top: 150px;
+    transform: rotate(-90deg);
+  }
+  .wrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;    
+  }
+  .show{
+    display: block;    
+    margin: 40px auto;
+    margin-top: 20px;
+  }
+  .line {
+    height: 100px;
+   }
+  .title__block,
+  .icon {
+    transform: rotate(90deg);
+  }
+  .title {
+    font-size: 22px;
+    width: 120px;
+    text-align: center;
+  }
+  .item {
+    height: 100px;
+  }
+  .title__options {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media(max-width: 767px) {
+  .options {
+    padding-top: 90px;
+  }
+  .title {
+    font-size: 18px;
+  }  
+  .show {
+    padding-left: 40px;
+  }
+}
